@@ -6,7 +6,6 @@
 #
 
 
-
 library(shiny)
 library(shinydashboard)
 
@@ -18,7 +17,8 @@ page_sidebar <- dashboardSidebar(
   sidebarMenu(
     sider_menu_index,
     sider_menu_article,
-    sider_menu_booklet
+    sider_menu_booklet,
+    sider_menu_about_me
   )
 )
 
@@ -26,7 +26,8 @@ page_body <- dashboardBody(
   tabItems(
     tab_index,
     tab_article,
-    tab_booklet
+    tab_booklet,
+    tab_about_me
   )
 )
 

@@ -36,3 +36,9 @@ DT_active_options <- list(paging = TRUE, searching = TRUE, info = FALSE, orderin
 DT_unactive_options <- list(paging = FALSE, searching = FALSE, info = FALSE, ordering = FALSE)
 DT_emtpy <- datatable(data.frame(item = "没有符合条件的数据！", stringsAsFactors = FALSE), 
                       options = DT_unactive_options, rownames = FALSE)
+
+# Tag Functions -----------------------------------------------------------
+
+get_blank_a <- function(name, href) {
+  tags$a(name, href = href, target = "_blank")
+}

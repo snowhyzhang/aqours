@@ -1,5 +1,5 @@
 
-source("config.R") # 读取数据库配置
+source("config/config.R") # 读取数据库等配置
 source("util_functions.R")
 source("paragraph.R")
 
@@ -10,3 +10,4 @@ library(dplyr)
 source("page/index.R")
 source("page/article.R")
 source("page/booklet.R")
+source("page/about_me.R")
