@@ -17,14 +17,16 @@ page_header <- dashboardHeader(title = "数据写诗")
 page_sidebar <- dashboardSidebar(
   sidebarMenu(
     sider_menu_index,
-    sider_menu_article
+    sider_menu_article,
+    sider_menu_booklet
   )
 )
 
 page_body <- dashboardBody(
   tabItems(
     tab_index,
-    tab_article
+    tab_article,
+    tab_booklet
   )
 )
 

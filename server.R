@@ -8,5 +8,7 @@
 library(shiny)
 
 shinyServer(function(input, output) {
-
+  output$booklet_list <- DT::renderDataTable(
+    output_book_list()
+  )
 })

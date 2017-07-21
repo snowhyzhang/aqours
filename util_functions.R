@@ -1,9 +1,7 @@
+library(RMySQL)
 library(DT)
 
-
 # DB functions ------------------------------------------------------------
-
-library(RMySQL)
 
 process_in_condition <- function(vctr) {
   return (paste0(vctr, collapse = ","))
