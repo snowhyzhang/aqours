@@ -6,19 +6,14 @@ tab_article <- tabItem(
   fluidRow(
     box(
       width = 12,
-      tags$div(style = "text-align: center", tags$h2("文章列表"))
+      tags$div(tags$h2(tags$span("文章列表", style = "line-height: 80px"), 
+                       tags$img(src = "img/qcode.jpg", style = "float:right; height:80px; width:80px"),
+                       tags$img(src = "img/server_avatar.png", style = "float:right; height:80px; width:80px")))
     )
   ),
   fluidRow(
     box(
       width = 12
-    )
-  ),
-  fluidRow(
-    box(
-      width = 12,
-      tags$div(style = "text-align: center", 
-               tags$img(src = "img/qcode.jpg", height = 100, width = 100))
     )
   )
 )
