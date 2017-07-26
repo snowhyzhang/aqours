@@ -8,7 +8,7 @@ tab_booklet <- tabItem(
       width = 12,
       tags$div(tags$h2(tags$span("小册子列表", style = "line-height: 80px"), 
                        tags$img(src = "img/qcode.jpg", style = "float:right; height:80px; width:80px"),
-                       tags$img(src = "img/server_avatar.png", style = "float:right; height:80px; width:80px")))
+                       tags$img(src = "img/server_avatar.png", style = "float:left; height:80px; width:80px")))
     )
   ),
   fluidRow(
@@ -40,7 +40,8 @@ output_book_list <- function() {
     ) %>% 
     select(-id, -url)
   
-  datatable(book_list, options = DT_active_options, rownames = FALSE, escape = 2)
+  datatable(book_list, options = DT_active_options, rownames = FALSE, escape = 2,
+            colnames = c("标题", "标签", "更新日期"))
 }
 
 

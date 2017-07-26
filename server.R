@@ -11,4 +11,8 @@ shinyServer(function(input, output) {
   output$booklet_list <- DT::renderDataTable(
     output_book_list()
   )
+  
+  output$article_list <- DT::renderDataTable(
+    output_article_list()
+  )
 })
